@@ -1,0 +1,6 @@
+{
+    "server": {
+      "port" : 8083,
+      "urlBase": "/api/v1"
+    }
+  }
