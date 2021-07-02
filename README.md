@@ -35,3 +35,10 @@ No seu navegador acesse o endereço:
 
 ```
 $ http://localhost:8083/swagger/
+```
+
+Acessando ambiente de produção: 
+
+```
+$ https://mixsolucoes.herokuapp.com/swagger/
+```
