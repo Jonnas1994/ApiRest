@@ -15,9 +15,18 @@ module.exports = () => {
         version: '1.0.0',
         description: 'Minha API para uso Diverso 😄',
       },
-      security: [{
-        bearerAuth: []
-      }],
+      securityDefinitions: {
+          Bearer: {
+              type: "apiKey",
+              name: "Authorization",
+              in: "header",
+              description:  'Cabeçalho de autorização JWT usando o esquema Bearer.' + 
+                            '\n Digite sua senha',
+              scheme: "bearer",
+              bearerFormat: "JWT"
+          }
+      },
+      basePath: '/api/v1',
     },
     apis: ["./api/routes/*.js"],
     

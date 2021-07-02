@@ -4,7 +4,8 @@
   "description": "API rest react native",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "debug": "nodemon --inspect server"
   },
   "repository": {
     "type": "git",
