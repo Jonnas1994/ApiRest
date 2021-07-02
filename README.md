@@ -4,7 +4,7 @@ Api desenvolvida em Node.js com Express
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Node.js&message=14.17.0&color=green&style=for-the-badge"/>
   <img src="https://img.shields.io/static/v1?label=Express&message=4.17.1&color=red&style=for-the-badge"/>
-  <img src="https://img.shields.io/static/v1?label=Swagger&message=4.17.1&color=blue&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=Swagger&message=3.0color=blue&style=for-the-badge"/>
   <img src="https://img.shields.io/static/v1?label=Heroku&message=CI/CD&color=purple&style=for-the-badge"/>
 </p>
 
