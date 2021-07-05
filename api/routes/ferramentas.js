@@ -2,7 +2,7 @@ const config      = require('config');
 const auth = require('./auth');
 
 module.exports = app => {
-    const controller = app.controllers.customerWallets;
+    const controller = app.controllers.ferramentas_controller;
 
     /**
      * @swagger
@@ -12,18 +12,18 @@ module.exports = app => {
 
     /**
     * @swagger
-    * /customer-wallets:
+    * /node-package:
     *  get:
-    *    summary: aqui vai o sumario
+    *    summary: Exibe as configurações do Node.js
     *    tags: [Ferramentas]
     *    security:
     *       - Bearer: []
-    *    description: listar todos os customer-wallets
+    *    description: Exibe todas as configurações referente ap arquivo "package.json" do projeto
     *    responses:
     *      '200':
     *        description: A successful response
     */
-    app.route( config.get('server.urlBase') + '/customer-wallets')
-        .get( auth.isAuthorized, controller.listCustomerWallets);
+    app.route( config.get('server.urlBase') + '/node-package')
+        .get( auth.isAuthorized, controller.listConfigPackage);
 
 }
