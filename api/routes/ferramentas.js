@@ -26,4 +26,20 @@ module.exports = app => {
     app.route( config.get('server.urlBase') + '/node-package')
         .get( auth.isAuthorized, controller.listConfigPackage);
 
+    /**
+    * @swagger
+    * /hour-load-generator:
+    *  get:
+    *    summary: Gera uma carga horária válida com 8 horas
+    *    tags: [Ferramentas]
+    *    security:
+    *       - Bearer: []
+    *    description: Gera uma carga horária com 8 horas diárias, sendo as marcações dinâmicas
+    *    responses:
+    *      '200':
+    *        description: A successful response
+    */
+     app.route( config.get('server.urlBase') + '/hour-load-generator')
+     .get( auth.isAuthorized, controller.listHourLoad);
+
 }
