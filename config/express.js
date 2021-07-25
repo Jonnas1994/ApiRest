@@ -13,7 +13,7 @@ module.exports = () => {
       info: {
         title: 'API Pública',
         version: '1.0.0',
-        description: 'Minha API para uso Diverso 😄 ',
+        description: 'Minha API para uso Diverso 😄',
       },
       securityDefinitions: {
           Bearer: {
