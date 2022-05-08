@@ -1,5 +1,5 @@
 # ApiRest
-Api desenvolvida em Node.js com Express
+Api desenvolvida em Node.js com Express.
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Node.js&message=14.17.0&color=green&style=for-the-badge"/>
